@@ -10,6 +10,7 @@ import {
 } from "@/components/ui";
 import { ScrollCue, SeedAtlas, PresenceMap } from "@/components/experience";
 import { resourceItems } from "@/lib/content";
+import { SeedStory } from "@/components/seed-story";
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 export default function Home() {
   return (
@@ -103,12 +104,13 @@ export default function Home() {
           </span>
         </div>
       </section>
+      <SeedStory />
       <SeedAtlas />
       <section className="production-section">
         <div className="production-visual">
           <Photo
-            name="sorghum"
-            alt="Sorghum crop detail — illustrative agricultural photography"
+            name="seed-detail"
+            alt="AI-generated illustrative maize seed detail, not a specific Tocek variety"
           />
           <div className="photo-note">
             THE CARE BEHIND THE CROP
@@ -166,8 +168,8 @@ export default function Home() {
         </div>
         <div className="research-photo" data-reveal>
           <Photo
-            name="wheat"
-            alt="Detail of a wheat field — illustrative crop photography"
+            name="new-growth"
+            alt="AI-generated illustrative young maize plant emerging from agricultural soil"
           />
           <div className="research-caption">
             <span>THE FIELD IS OUR STARTING POINT</span>
@@ -222,15 +224,21 @@ export default function Home() {
         </span>
       </section>
       <section className="audiences container">
-        <div data-reveal>
-          {label("Grow with Tocek")}
-          <h2>
-            Your field.
-            <br />
-            Your business.
-            <br />
-            <em>Our next conversation.</em>
-          </h2>
+        <div className="audience-visual">
+          <Photo
+            name="crop-still-life"
+            alt="AI-generated illustrative crop still life of beans, soyabeans, cowpeas and sorghum"
+          />
+          <div className="audience-visual-copy" data-reveal>
+            {label("Grow with Tocek")}
+            <h2>
+              Your field.
+              <br />
+              Your business.
+              <br />
+              <em>Our next conversation.</em>
+            </h2>
+          </div>
         </div>
         <div className="audience-links" data-reveal>
           {[

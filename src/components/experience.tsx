@@ -19,16 +19,79 @@ import Image from "next/image";
 export function ScrollEffects() {
   const path = usePathname();
   useEffect(() => {
+    const main = document.querySelector("main");
+    if (!main || !("IntersectionObserver" in window)) return;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const tracked = new Set<HTMLElement>();
     const observer = new IntersectionObserver(
-      (entries) =>
-        entries.forEach((entry) => {
-          entry.target.classList.toggle("is-visible", entry.isIntersecting);
-        }),
-      { threshold: 0.08, rootMargin: "0px 0px -25px 0px" },
+      (entries) => {
+        for (const entry of entries) {
+          const element = entry.target as HTMLElement;
+          // Different entry/exit thresholds prevent edge flicker during slow scroll.
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.16) {
+            element.classList.add("is-visible");
+          } else if (!entry.isIntersecting || entry.intersectionRatio <= 0.08) {
+            element.dataset.enterFrom =
+              entry.boundingClientRect.top < 0 ? "above" : "below";
+            element.classList.remove("is-visible");
+          }
+        }
+      },
+      { threshold: [0, 0.08, 0.16], rootMargin: "-48px 0px -48px 0px" },
     );
-    const els = document.querySelectorAll("[data-reveal]");
-    els.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
+    const register = () => {
+      if (reducedMotion.matches) return;
+      main.querySelectorAll<HTMLElement>("[data-reveal]").forEach((element) => {
+        if (element.closest(".atlas-image")) return;
+        if (tracked.has(element)) return;
+        const box = element.getBoundingClientRect();
+        const visible =
+          Math.min(box.bottom, innerHeight - 48) - Math.max(box.top, 48);
+        element.dataset.enterFrom = box.bottom < 0 ? "above" : "below";
+        element.style.setProperty(
+          "--reveal-delay",
+          `${(tracked.size % 3) * 65}ms`,
+        );
+        element.classList.toggle(
+          "is-visible",
+          visible >= Math.min(box.height * 0.16, 90),
+        );
+        element.classList.add("reveal-ready");
+        tracked.add(element);
+        observer.observe(element);
+      });
+      for (const element of tracked) {
+        if (!element.isConnected) {
+          observer.unobserve(element);
+          tracked.delete(element);
+        }
+      }
+    };
+    const reset = () => {
+      observer.disconnect();
+      tracked.forEach((element) => {
+        element.classList.remove("reveal-ready", "is-visible");
+        element.style.removeProperty("--reveal-delay");
+        delete element.dataset.enterFrom;
+      });
+      tracked.clear();
+      register();
+    };
+    register();
+    // Also register crop filters, gallery selections and streamed route content.
+    const changes = new MutationObserver(register);
+    changes.observe(main, { childList: true, subtree: true });
+    reducedMotion.addEventListener("change", reset);
+    return () => {
+      changes.disconnect();
+      observer.disconnect();
+      reducedMotion.removeEventListener("change", reset);
+      tracked.forEach((element) => {
+        element.classList.remove("reveal-ready", "is-visible");
+        element.style.removeProperty("--reveal-delay");
+        delete element.dataset.enterFrom;
+      });
+    };
   }, [path]);
   return null;
 }

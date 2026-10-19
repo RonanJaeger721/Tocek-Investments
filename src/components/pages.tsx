@@ -50,16 +50,24 @@ function Intro({
   kicker,
   title,
   children,
+  image = "seed-detail",
 }: {
   kicker: string;
   title: string;
   children: React.ReactNode;
+  image?: string;
 }) {
   return (
     <section className="container interior-intro">
       <div data-reveal>
         {label(kicker)}
         <h2>{title}</h2>
+        <Photo
+          name={image}
+          alt="Illustrative agricultural seed and crop imagery"
+          className="interior-intro-photo"
+          sizes="(max-width:760px) 90vw, 42vw"
+        />
       </div>
       <div className="reading-copy" data-reveal>
         {children}
@@ -111,6 +119,12 @@ function ContactDetails() {
           </p>
         </div>
       </div>
+      <figure className="contact-detail-image">
+        <Photo
+          name="new-growth"
+          alt="AI-generated illustrative crop seedling, not a Tocek farm photograph"
+        />
+      </figure>
     </aside>
   );
 }
@@ -224,6 +238,7 @@ function Story() {
       <Intro
         kicker="The next chapter"
         title="Relationships that create possibility."
+        image="crop-still-life"
       >
         <p className="lead">
           Tocek is developing international relationships while remaining rooted
@@ -275,6 +290,13 @@ function Values() {
             <span>0{i + 1}</span>
             <h2>{v.title}</h2>
             <p>{v.text}</p>
+            {i % 2 === 0 && (
+              <Photo
+                name={i === 0 ? "seed-detail" : "new-growth"}
+                alt="Illustrative agricultural seed and growth imagery"
+                className="values-row-photo"
+              />
+            )}
           </article>
         ))}
       </section>
@@ -398,7 +420,11 @@ function Agricultural() {
         description="Enquire about seed products and agrochemical information from the Tocek team."
         image="wheat"
       />
-      <Intro kicker="Product enquiries" title="Start with the details.">
+      <Intro
+        kicker="Product enquiries"
+        title="Start with the details."
+        image="crop-still-life"
+      >
         <p className="lead">
           Tocek’s portfolio includes agricultural seed and agrochemicals.
         </p>
@@ -447,6 +473,7 @@ function Research({ quality = false }: { quality?: boolean }) {
             ? "Quality starts with the work."
             : "The field asks better questions."
         }
+        image={quality ? "seed-detail" : "new-growth"}
       >
         <p className="lead">
           {quality
@@ -541,6 +568,7 @@ function Global() {
       <Intro
         kicker="Connect across borders"
         title="Let’s understand your market."
+        image="hero"
       >
         <p className="lead">
           Tocek is developing its international business relationships and
@@ -587,6 +615,11 @@ function Partnerships({ distribution = false }: { distribution?: boolean }) {
             <br />
             <em>a shared endeavour.</em>
           </h2>
+          <Photo
+            name="crop-still-life"
+            alt="AI-generated illustrative seed collection, not specific supplied products"
+            className="partnership-seed-photo"
+          />
         </div>
         <div>
           {(distribution

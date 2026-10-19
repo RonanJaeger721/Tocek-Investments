@@ -70,8 +70,14 @@ export function Photo({
   priority?: boolean;
   sizes?: string;
 }) {
+  const generated = ["seed-detail", "new-growth", "crop-still-life"].includes(
+    name,
+  );
   return (
-    <div className={`photo ${className}`}>
+    <div
+      className={`photo ${generated ? "concept-photo" : ""} ${className}`}
+      data-reveal={priority ? undefined : "image"}
+    >
       <Image
         src={cropSrc(name)}
         alt={alt}
@@ -80,6 +86,11 @@ export function Photo({
         preload={priority}
         quality={85}
       />
+      {generated && (
+        <span className="illustration-credit">
+          AI-generated · Illustrative crop imagery
+        </span>
+      )}
     </div>
   );
 }

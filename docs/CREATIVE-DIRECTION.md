@@ -17,3 +17,7 @@ Motion: one settled hero, a crop study transition, subtle view-based reveals, im
 Images are explicitly illustrative, not represented as Tocek farms, personnel or facilities. No people, factories, fake laboratory photographs, awards, customer testimonials, capacity figures or partner logos are fabricated.
 
 Reference review: Grandwalker Landscaping at outputs-five-steel.vercel.app (full-image opening, framed navigation, typographic rhythm, service/project imagery and dropdown/menu structure); Seed Co Zimbabwe field crops (crop navigation, varieties, technical information, farmer hub, FAQs, media, contact and distribution structure). The Tocek compositions and visual identity are independent.
+
+## Image and scroll refinement
+
+User requested more imagery and visible fade-ins/fade-outs while preserving the approved design. Added a three-frame seed-to-field image sequence, contextual seed and growth scenes, and imagery within text-heavy inner pages. The mobile sequence becomes a native swipe gallery. Replaced entry-only scroll timelines with reversible IntersectionObserver states, 750–850ms staggered entrances, 420ms fade-outs, opposite entry offsets for upward re-entry, and distinct enter/exit thresholds to avoid edge flicker. Default content is visible without JavaScript and all movement is disabled for reduced motion. No GPU-heavy masks or permanent compositor hints are used by the new reveal system.

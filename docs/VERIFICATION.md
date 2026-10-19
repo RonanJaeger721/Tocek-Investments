@@ -24,3 +24,11 @@ No genuine enquiry mailbox or delivery credentials were supplied. The public for
 No CMS service is provisioned; the site has a clean typed content layer and integration notes. No current market list, technical PDFs, official news, approved leadership or legacy material was supplied. The public site does not invent these. Proposed editorial copy and identity still require client sign-off as documented in the approval register.
 
 No measured Core Web Vitals, Lighthouse score, device-lab test or screen-reader certification is claimed. Responsive checks were performed in the desktop browser's viewport controls.
+
+## Imagery and reversible motion refinement
+
+User requested more images and fade-ins/fade-outs while preserving the design. Added three generated illustrative crop assets (see `IMAGERY-AND-PROMPTS.md`), a seed-to-field gallery, image-led production/research/farmer areas, and imagery in the corporate inner pages.
+
+The new reveal system uses reusable viewport states with separate enter/exit thresholds and supports upward re-entry. Browser evidence: gallery heading opacity was 1 while visible, 0 after leaving above, and 1 again after upward scrolling; `data-enter-from="above"` confirmed the reverse entry direction. Mobile native gallery scrolling moved `scrollLeft` to approximately 120px, showed the next image, and did not create document overflow. No page scroll is intercepted.
+
+Final local production-build checks: 100 route/viewport combinations passed. All 32 routes at 390px and 1366px, plus homepage/About/Values/Research/Partnerships/Contact at 320, 360, 430, 768, 1024 and 1920px. Checks covered heading structure, document overflow and observed broken images. Desktop gallery composition was visually inspected at the normal browser viewport. Viewport-override screenshot capture was unreliable, so responsive dimensions were checked in the rendered DOM. Build and type checking passed. Reduced motion remains a source-reviewed fallback, not a device-lab certification.
