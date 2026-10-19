@@ -19,20 +19,20 @@ const serif = DM_Serif_Display({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Tocek Investments | Growing Possibilities. Beyond Borders.",
-    template: "%s | Tocek Investments",
+    default: "Zadzamatura | Growing Possibilities. Beyond Borders.",
+    template: "%s | Zadzamatura",
   },
   description: company.description,
   openGraph: {
     type: "website",
-    siteName: "Tocek Investments",
+    siteName: "Zadzamatura",
     locale: "en_ZW",
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Tocek Investments — Growing possibilities. Beyond borders.",
+        alt: "Zadzamatura — Growing possibilities. Beyond borders.",
       },
     ],
   },
@@ -64,7 +64,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: company.legalName,
+              name: company.agriculturalBrand,
+              legalName: company.legalName,
               url: siteUrl,
               description: company.description,
               telephone: company.phone,

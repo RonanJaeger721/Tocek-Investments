@@ -7,7 +7,7 @@ import { company, nav } from "@/lib/content";
 
 export function Wordmark() {
   return (
-    <span className="wordmark">
+    <span className="wordmark wordmark-zadzamatura">
       <svg viewBox="0 0 34 40" fill="none" aria-hidden="true">
         <path
           d="M17 37V15M17 24C3 25 1 14 2 8c12-1 18 4 15 16ZM17 17C16 6 22 2 31 2c1 10-4 17-14 15Z"
@@ -21,7 +21,7 @@ export function Wordmark() {
         />
       </svg>
       <span>
-        TOCEK<small>INVESTMENTS</small><span className="wordmark-brand">ZADZAMATURA</span>
+        ZADZAMATURA<small>BY TOCEK INVESTMENTS</small>
       </span>
     </span>
   );
@@ -102,7 +102,7 @@ export function Navigation() {
       }}
     >
       <div className="nav-wrap">
-        <Link href="/" aria-label="Tocek Investments home" onClick={close}>
+        <Link href="/" aria-label="Zadzamatura home" onClick={close}>
           <Wordmark />
         </Link>
         <nav className="desktop-nav" aria-label="Main navigation">
@@ -216,7 +216,7 @@ export function Footer() {
             Beyond borders.
           </p>
           <span className="agri-brand">
-            Our agricultural brand{" "}
+            The agricultural brand of Tocek Investments{" "}
             <img
               src="/images/zadzamatura.png"
               width="99"
@@ -227,7 +227,7 @@ export function Footer() {
         </div>
         <div>
           <h3>Discover</h3>
-          <Link href="/about">About Tocek</Link>
+          <Link href="/about">About Zadzamatura</Link>
           <Link href="/solutions">Our solutions</Link>
           <Link href="/seeds">Seed portfolio</Link>
           <Link href="/research">Research & innovation</Link>

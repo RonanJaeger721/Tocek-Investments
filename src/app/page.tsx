@@ -29,7 +29,7 @@ export default function Home() {
         </div>
         <div className="container hero-content">
           <div className="hero-kicker">
-            <span /> TOCEK INVESTMENTS · ZADZAMATURA
+            <span /> ZADZAMATURA · BY TOCEK INVESTMENTS
           </div>
           <h1>
             Growing possibilities.
@@ -45,7 +45,7 @@ export default function Home() {
               <div className="hero-actions">
                 <ButtonLink href="/seeds">Explore our seeds</ButtonLink>
                 <ArrowLink href="/about" light>
-                  Discover Tocek
+                  Discover Zadzamatura
                 </ArrowLink>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function Home() {
           <ScrollCue />
           <span>01 — A NEW PERSPECTIVE ON GROWTH</span>
         </div>
-        <span className="hero-vertical">TOCEK INVESTMENTS / ZIMBABWE</span>
+        <span className="hero-vertical">ZADZAMATURA / ZIMBABWE</span>
       </section>
       <section className="introduction container" id="introduction">
         <div className="intro-heading" data-reveal>
@@ -87,7 +87,7 @@ export default function Home() {
             Zimbabwe, our business connects growers, agricultural enterprises
             and partners through our agricultural brand, Zadzamatura.
           </p>
-          <ArrowLink href="/about">Get to know Tocek</ArrowLink>
+          <ArrowLink href="/about">Get to know Zadzamatura</ArrowLink>
         </div>
         <div className="intro-baseline">
           <span>
@@ -230,7 +230,7 @@ export default function Home() {
             alt="AI-generated illustrative crop still life of beans, soyabeans, cowpeas and sorghum"
           />
           <div className="audience-visual-copy" data-reveal>
-            {label("Grow with Tocek")}
+            {label("Grow with Zadzamatura")}
             <h2>
               Your field.
               <br />
@@ -304,7 +304,7 @@ export default function Home() {
           </div>
           <div className="news-note">
             <div>
-              <span className="eyebrow">FROM TOCEK</span>
+              <span className="eyebrow">FROM ZADZAMATURA</span>
               <h3>Company news & updates</h3>
               <p>Follow the next chapter of our agricultural business.</p>
             </div>

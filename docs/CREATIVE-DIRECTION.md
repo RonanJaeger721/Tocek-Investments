@@ -10,7 +10,7 @@ Three opening concepts considered:
 
 Prominent methods: ST-01 editorial product presentation; ST-04 useful crop discovery; ST-05 cinematic opening. No WebGL or 3D was added because no authentic models or production sequences were supplied. The crop atlas connects changing imagery to the selected crop and a real category route, with buttons, tabs and keyboard navigation.
 
-Identity: user confirmed TOCEK primary and Zadzamatura secondary. The TOCEK type treatment and seed symbol are proposed site identity elements, not an extracted official Tocek logo. The actual Zadzamatura logo is extracted unchanged from the supplied profile. Palette follows the brief: forest, evergreen, ivory and restrained wheat gold. Typography: DM Serif Display and Manrope, self-hosted through Next Font.
+Identity: user confirmed Zadzamatura primary, with Tocek Investments as the corporate name. The Zadzamatura type treatment and seed symbol are proposed site identity elements, not an extracted official Tocek logo. The actual Zadzamatura logo is extracted unchanged from the supplied profile. Palette follows the brief: forest, evergreen, ivory and restrained wheat gold. Typography: DM Serif Display and Manrope, self-hosted through Next Font.
 
 Motion: one settled hero, a crop study transition, subtle view-based reveals, image hover feedback and directional navbar. Native scrolling, no scroll-jacking. Reduced-motion CSS removes movement and leaves all content visible. Crop gallery is vertical and touch friendly on mobile.
 

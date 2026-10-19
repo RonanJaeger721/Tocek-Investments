@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-export const alt = "Tocek Investments — Growing possibilities. Beyond borders.";
+export const alt = "Zadzamatura — Growing possibilities. Beyond borders.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export default function Image() {
@@ -18,7 +18,7 @@ export default function Image() {
         }}
       >
         <div style={{ fontSize: 32, letterSpacing: 6, display: "flex" }}>
-          TOCEK INVESTMENTS
+          ZADZAMATURA · BY TOCEK INVESTMENTS
         </div>
         <div
           style={{

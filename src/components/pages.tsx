@@ -132,7 +132,7 @@ function About() {
   return (
     <>
       <PageHero
-        kicker="About Tocek"
+        kicker="About Zadzamatura"
         title="Rooted in the land."
         italic="Focused on what’s next."
         description="A Zimbabwean agricultural business with seed at its heart and partnership in its outlook."
@@ -654,7 +654,7 @@ function Contact() {
   return (
     <>
       <PageHero
-        kicker="Contact Tocek"
+        kicker="Contact Zadzamatura"
         title="The next season."
         italic="Starts with a conversation."
         description="Seed enquiries, commercial requirements and international partnerships. Let’s connect."
@@ -953,7 +953,7 @@ function ResourceArticle({ slug }: { slug: string }) {
           <h1>{r.title}</h1>
           <p>{r.summary}</p>
           <div className="article-byline">
-            <span>TOCEK INVESTMENTS · CUSTOMER ENQUIRY RESOURCES</span>
+            <span>ZADZAMATURA · CUSTOMER ENQUIRY RESOURCES</span>
             <ShareButton />
           </div>
         </div>
@@ -1029,7 +1029,7 @@ function Insights() {
       )}
       <section className="container newsroom">
         <div>
-          {label("The Tocek newsroom")}
+          {label("The Zadzamatura newsroom")}
           <h2>
             News from
             <br />
@@ -1079,7 +1079,7 @@ function NewsArticlePage({ slug }: { slug: string }) {
           items={[{ label: "Insights", href: "/insights" }, { label: a.title }]}
         />
         <div className="article-heading">
-          <span className="eyebrow">TOCEK / COMPANY NEWS</span>
+          <span className="eyebrow">ZADZAMATURA / COMPANY NEWS</span>
           <h1>{a.title}</h1>
           <p>{a.summary}</p>
           <div className="article-byline">
@@ -1115,7 +1115,7 @@ function NewsArticlePage({ slug }: { slug: string }) {
         )}
       </article>
       <section className="container related-articles">
-        {label("More from Tocek")}
+        {label("More from Zadzamatura")}
         {news
           .filter((x) => x.slug !== a.slug)
           .slice(0, 3)

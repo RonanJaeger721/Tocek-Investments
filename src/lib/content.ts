@@ -270,7 +270,7 @@ export const resourceItems = [
 export const pageInfo: Record<string, { title: string; description: string }> =
   {
     "/about": {
-      title: "About Tocek",
+      title: "About Zadzamatura",
       description:
         "A Zimbabwean seed business connecting agricultural production, research and productive partnerships.",
     },
@@ -323,7 +323,7 @@ export const pageInfo: Record<string, { title: string; description: string }> =
         "Discuss crop requirements, market opportunities and commercial seed supply.",
     },
     "/contact": {
-      title: "Contact Tocek",
+      title: "Contact Zadzamatura",
       description:
         "Local and international enquiries for seed products, bulk supply and partnerships.",
     },

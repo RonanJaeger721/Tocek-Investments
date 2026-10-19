@@ -17,7 +17,7 @@ Withheld: all director names and biographies, management appointments, historica
 
 Only the two source-backed variety names are featured. No technical sheet, yield figure, disease/drought tolerance, maturity, region recommendation, packaging size or stock availability was supplied/approved; these values are omitted. Source links are provided on variety pages. Current range should be reviewed by Tocek before a commercial launch campaign.
 
-The user confirmed on 19 October 2026: TOCEK primary; Zadzamatura secondary. For the remaining facts the user replied “any”; that is treated as discretion to select source-backed information, not authority to invent contacts, countries or specifications.
+The user confirmed on 19 October 2026: Zadzamatura primary; Tocek Investments as the corporate name (latest confirmed preference). For the remaining facts the user replied “any”; that is treated as discretion to select source-backed information, not authority to invent contacts, countries or specifications.
 
 ## Pending client input
 
