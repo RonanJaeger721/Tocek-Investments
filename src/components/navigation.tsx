@@ -8,7 +8,7 @@ import { company, nav } from "@/lib/content";
 export function Wordmark() {
   return (
     <span className="wordmark wordmark-zadzamatura">
-      <img className="official-brand-logo" src="/images/zadzamatura-ribbon.png" width="185" height="60" alt="Zadzamatura" />
+      <img className="official-brand-logo" src="/images/zadzamatura-approved-ribbon.png" width="185" height="60" alt="Zadzamatura" />
       <span className="corporate-endorsement">BY TOCEK INVESTMENTS</span>
     </span>
   );
@@ -205,7 +205,7 @@ export function Footer() {
           <span className="agri-brand">
             The agricultural brand of Tocek Investments{" "}
             <img
-              src="/images/zadzamatura-logo.png"
+              src="/images/zadzamatura-approved-logo.png"
               width="240"
               height="145"
               alt="Zadzamatura"

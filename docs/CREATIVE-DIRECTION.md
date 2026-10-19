@@ -10,7 +10,7 @@ Three opening concepts considered:
 
 Prominent methods: ST-01 editorial product presentation; ST-04 useful crop discovery; ST-05 cinematic opening. No WebGL or 3D was added because no authentic models or production sequences were supplied. The crop atlas connects changing imagery to the selected crop and a real category route, with buttons, tabs and keyboard navigation.
 
-Identity: user confirmed Zadzamatura primary, with Tocek Investments as the corporate name. The supplied Zadzamatura ribbon and maize logo now leads the site, with a transparent background extraction from the client WhatsApp image. The client confirmed blue as the main colour: deep blue #123F7A, navy #091C38 and cool white, with restrained wheat accents. The logo retains its original red, green, grey, black and white colours. Typography: DM Serif Display and Manrope, self-hosted through Next Font.
+Identity: user confirmed Zadzamatura primary, with Tocek Investments as the corporate name. The client-approved PDF artwork now leads the site. Its embedded image is extracted directly, with supplied white presentation retained; compact ribbon and diamond crops support the header and icons. The client confirmed blue as the main colour: deep blue #123F7A, navy #091C38 and cool white, with restrained wheat accents. The logo retains its original red, green, grey, black and white colours. Typography: DM Serif Display and Manrope, self-hosted through Next Font.
 
 Motion: one settled hero, a crop study transition, subtle view-based reveals, image hover feedback and directional navbar. Native scrolling, no scroll-jacking. Reduced-motion CSS removes movement and leaves all content visible. Crop gallery is vertical and touch friendly on mobile.
 

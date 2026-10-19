@@ -4004,3 +4004,6 @@ footer {
   .wordmark-zadzamatura .official-brand-logo { width: 140px; height: 46px; }
   .wordmark-zadzamatura .corporate-endorsement { font-size: 5.5px; letter-spacing: .1em; }
 }
+
+/* Direct PDF artwork retains its supplied white presentation. */
+.wordmark-zadzamatura .official-brand-logo { background: #fff; border-radius: 2px; padding: 2px; }
