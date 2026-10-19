@@ -1,0 +1,271 @@
+{
+  "routes": 32,
+  "issues": [],
+  "unlistedInternalLinks": [],
+  "api": {
+    "missing_fields": 400,
+    "wrong_origin": 403,
+    "honeypot": 400,
+    "unconfigured_delivery": 503,
+    "oversized": 413
+  },
+  "notFoundStatus": 404,
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "h1": 1,
+      "title": "Tocek Investments | Growing Possibilities. Beyond Borders.",
+      "canonical": "https://tocek-investments.vercel.app",
+      "description": true
+    },
+    {
+      "path": "/about",
+      "status": 200,
+      "h1": 1,
+      "title": "About Tocek | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/about",
+      "description": true
+    },
+    {
+      "path": "/about/our-story",
+      "status": 200,
+      "h1": 1,
+      "title": "Our story | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/about/our-story",
+      "description": true
+    },
+    {
+      "path": "/about/our-values",
+      "status": 200,
+      "h1": 1,
+      "title": "Our values | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/about/our-values",
+      "description": true
+    },
+    {
+      "path": "/solutions",
+      "status": 200,
+      "h1": 1,
+      "title": "Our solutions | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/solutions",
+      "description": true
+    },
+    {
+      "path": "/solutions/seed-production",
+      "status": 200,
+      "h1": 1,
+      "title": "Seed production & processing | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/solutions/seed-production",
+      "description": true
+    },
+    {
+      "path": "/solutions/agricultural-products",
+      "status": 200,
+      "h1": 1,
+      "title": "Agricultural products | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/solutions/agricultural-products",
+      "description": true
+    },
+    {
+      "path": "/research",
+      "status": 200,
+      "h1": 1,
+      "title": "Research & innovation | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/research",
+      "description": true
+    },
+    {
+      "path": "/research/quality",
+      "status": 200,
+      "h1": 1,
+      "title": "Quality approach | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/research/quality",
+      "description": true
+    },
+    {
+      "path": "/global-presence",
+      "status": 200,
+      "h1": 1,
+      "title": "Global presence | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/global-presence",
+      "description": true
+    },
+    {
+      "path": "/partnerships",
+      "status": 200,
+      "h1": 1,
+      "title": "Partnerships | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/partnerships",
+      "description": true
+    },
+    {
+      "path": "/distribution",
+      "status": 200,
+      "h1": 1,
+      "title": "Distribution enquiries | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/distribution",
+      "description": true
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "h1": 1,
+      "title": "Contact Tocek | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/contact",
+      "description": true
+    },
+    {
+      "path": "/seeds",
+      "status": 200,
+      "h1": 1,
+      "title": "Seed portfolio | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/seeds",
+      "description": true
+    },
+    {
+      "path": "/resources",
+      "status": 200,
+      "h1": 1,
+      "title": "Farmer resources | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/resources",
+      "description": true
+    },
+    {
+      "path": "/insights",
+      "status": 200,
+      "h1": 1,
+      "title": "Insights & news | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/insights",
+      "description": true
+    },
+    {
+      "path": "/privacy",
+      "status": 200,
+      "h1": 1,
+      "title": "Privacy policy | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/privacy",
+      "description": true
+    },
+    {
+      "path": "/seeds/maize",
+      "status": 200,
+      "h1": 1,
+      "title": "Maize seeds | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/seeds/maize",
+      "description": true
+    },
+    {
+      "path": "/seeds/soyabeans",
+      "status": 200,
+      "h1": 1,
+      "title": "Soyabeans seeds | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/seeds/soyabeans",
+      "description": true
+    },
+    {
+      "path": "/seeds/sugar-beans",
+      "status": 200,
+      "h1": 1,
+      "title": "Sugar beans seeds | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/seeds/sugar-beans",
+      "description": true
+    },
+    {
+      "path": "/seeds/sorghum",
+      "status": 200,
+      "h1": 1,
+      "title": "Sorghum seeds | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/seeds/sorghum",
+      "description": true
+    },
+    {
+      "path": "/seeds/sunflower",
+      "status": 200,
+      "h1": 1,
+      "title": "Sunflower seeds | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/seeds/sunflower",
+      "description": true
+    },
+    {
+      "path": "/seeds/pearl-millet",
+      "status": 200,
+      "h1": 1,
+      "title": "Pearl millet seeds | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/seeds/pearl-millet",
+      "description": true
+    },
+    {
+      "path": "/seeds/groundnuts",
+      "status": 200,
+      "h1": 1,
+      "title": "Groundnuts seeds | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/seeds/groundnuts",
+      "description": true
+    },
+    {
+      "path": "/seeds/cowpeas",
+      "status": 200,
+      "h1": 1,
+      "title": "Cowpeas seeds | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/seeds/cowpeas",
+      "description": true
+    },
+    {
+      "path": "/seeds/wheat",
+      "status": 200,
+      "h1": 1,
+      "title": "Wheat seeds | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/seeds/wheat",
+      "description": true
+    },
+    {
+      "path": "/seeds/finger-millet",
+      "status": 200,
+      "h1": 1,
+      "title": "Finger millet seeds | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/seeds/finger-millet",
+      "description": true
+    },
+    {
+      "path": "/seeds/maize/zs265",
+      "status": 200,
+      "h1": 1,
+      "title": "ZS265 Maize | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/seeds/maize/zs265",
+      "description": true
+    },
+    {
+      "path": "/seeds/sugar-beans/nua45",
+      "status": 200,
+      "h1": 1,
+      "title": "NUA45 Sugar beans | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/seeds/sugar-beans/nua45",
+      "description": true
+    },
+    {
+      "path": "/resources/seed-enquiry-checklist",
+      "status": 200,
+      "h1": 1,
+      "title": "Make your seed enquiry count | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/resources/seed-enquiry-checklist",
+      "description": true
+    },
+    {
+      "path": "/resources/understanding-technical-sheets",
+      "status": 200,
+      "h1": 1,
+      "title": "A closer look at technical information | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/resources/understanding-technical-sheets",
+      "description": true
+    },
+    {
+      "path": "/resources/distribution-enquiry-guide",
+      "status": 200,
+      "h1": 1,
+      "title": "Planning a distribution conversation | Tocek Investments",
+      "canonical": "https://tocek-investments.vercel.app/resources/distribution-enquiry-guide",
+      "description": true
+    }
+  ]
+}

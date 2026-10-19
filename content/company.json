@@ -1,0 +1,38 @@
+{
+  "name": "TOCEK INVESTMENTS",
+  "legalName": "Tocek Investments (Pvt) Ltd",
+  "agriculturalBrand": "Zadzamatura",
+  "description": "A Zimbabwean agricultural enterprise focused on quality seeds, innovation and productive partnerships that support the future of farming.",
+  "phone": "+263 772 568329",
+  "phoneHref": "+263772568329",
+  "address": "Plot K, Observatory Farm, Glenara Road, Mount Hampden, Harare, Zimbabwe",
+  "email": null,
+  "vision": null,
+  "mission": null,
+  "leadership": [],
+  "legacy": null,
+  "partners": [],
+  "markets": [
+    {
+      "country": "Zimbabwe",
+      "type": "operating",
+      "location": "Mount Hampden, Harare",
+      "approved": true
+    }
+  ],
+  "milestones": [
+    {
+      "year": "2009",
+      "title": "Rooted in Zimbabwe",
+      "description": "Tocek Investments was formed as a Zimbabwean seed business.",
+      "source": "Company profile, 2024"
+    }
+  ],
+  "news": [],
+  "approvals": {
+    "brandHierarchy": "User confirmed TOCEK primary, Zadzamatura secondary, 19 October 2026",
+    "contacts": "2024 client profile; current confirmation requested",
+    "international": "No current country list supplied; historical Zambia and target markets withheld",
+    "leadership": "Withheld pending explicit approval"
+  }
+}
