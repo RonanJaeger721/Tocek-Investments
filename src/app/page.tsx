@@ -29,7 +29,7 @@ export default function Home() {
         </div>
         <div className="container hero-content">
           <div className="hero-kicker">
-            <span /> THE POTENTIAL IN EVERY SEED
+            <span /> TOCEK INVESTMENTS · ZADZAMATURA
           </div>
           <h1>
             Growing possibilities.

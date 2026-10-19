@@ -21,7 +21,7 @@ export function Wordmark() {
         />
       </svg>
       <span>
-        TOCEK<small>INVESTMENTS</small>
+        TOCEK<small>INVESTMENTS</small><span className="wordmark-brand">ZADZAMATURA</span>
       </span>
     </span>
   );
