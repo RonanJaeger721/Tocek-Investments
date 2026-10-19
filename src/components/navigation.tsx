@@ -8,21 +8,8 @@ import { company, nav } from "@/lib/content";
 export function Wordmark() {
   return (
     <span className="wordmark wordmark-zadzamatura">
-      <svg viewBox="0 0 34 40" fill="none" aria-hidden="true">
-        <path
-          d="M17 37V15M17 24C3 25 1 14 2 8c12-1 18 4 15 16ZM17 17C16 6 22 2 31 2c1 10-4 17-14 15Z"
-          stroke="currentColor"
-          strokeWidth="1.6"
-        />
-        <path
-          d="M17 24 6 12m11 5L27 6"
-          stroke="currentColor"
-          strokeWidth="1.2"
-        />
-      </svg>
-      <span>
-        ZADZAMATURA<small>BY TOCEK INVESTMENTS</small>
-      </span>
+      <img className="official-brand-logo" src="/images/zadzamatura-ribbon.png" width="185" height="60" alt="Zadzamatura" />
+      <span className="corporate-endorsement">BY TOCEK INVESTMENTS</span>
     </span>
   );
 }
@@ -218,9 +205,9 @@ export function Footer() {
           <span className="agri-brand">
             The agricultural brand of Tocek Investments{" "}
             <img
-              src="/images/zadzamatura.png"
-              width="99"
-              height="40"
+              src="/images/zadzamatura-logo.png"
+              width="240"
+              height="145"
               alt="Zadzamatura"
             />
           </span>
@@ -259,7 +246,7 @@ export function Footer() {
         </a>
       </div>
       <div className="footer-land" aria-hidden="true">
-        TOCEK
+        ZADZAMATURA
       </div>
     </footer>
   );

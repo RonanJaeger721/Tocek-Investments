@@ -18,3 +18,8 @@ The TOCEK seed symbol is a proposed native vector identity treatment, not a clai
 ## Generated supporting crop imagery
 
 `seed-detail.webp`, `new-growth.webp` and `crop-still-life.webp` were created using the built-in image generation tool on 19 October 2026. They are illustrative editorial crop visuals, not photographs of Tocek farms, facilities, personnel or specific varieties. The website labels each use as AI-generated illustrative imagery. See `IMAGERY-AND-PROMPTS.md` for exact prompts and saved paths. These assets do not fall under the Unsplash licence.
+
+## Client-supplied logo update — 19 October 2026
+Source: WhatsApp Image 2026-10-19 at 10.47.40.jpeg, supplied by the user. Background removed using the built-in imagegen tool; original ribbon colours, brand text, maize emblem and tagline retained. Transparent full artwork: public/images/zadzamatura-logo.png. Compact ribbon derivative: public/images/zadzamatura-ribbon.png. App icons are square derivatives of the same logo. The client confirmed blue as the main website colour; logo colours remain unchanged.
+
+Extraction prompt: Remove only the surrounding white background to genuine transparent alpha. Preserve the exact original logo artwork, red ribbon, white ZADZAMATURA lettering with black shadow, green maize emblem, grey ribbon ends, and black tagline 'The Winning Seed &' / 'Chemicals'. Preserve enclosed white details inside lettering and maize kernels. Do not redesign, recolor, rewrite, stylize or add anything. Remove excess exterior margins and narrow edge artifact. Return a clean tightly framed transparent logo.

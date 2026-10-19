@@ -4,14 +4,14 @@
   --font-display: var(--font-serif);
 }
 :root {
-  --forest: #133b2c;
-  --evergreen: #0d251d;
-  --ivory: #f7f6f0;
+  --brand-blue: #123f7a;
+  --navy: #091c38;
+  --ivory: #f5f7fb;
   --gold: #b8a06a;
-  --sage: #a4b5a1;
-  --ink: #202e25;
-  --line: #d9ded5;
-  --muted: #657065;
+  --mist: #9fb6d4;
+  --ink: #202d42;
+  --line: #d8e0eb;
+  --muted: #5e6e83;
   --gutter: clamp(24px, 5.3vw, 104px);
 }
 * {
@@ -32,7 +32,7 @@ body {
 }
 ::selection {
   color: var(--ivory);
-  background: var(--forest);
+  background: var(--brand-blue);
 }
 a {
   color: inherit;
@@ -108,7 +108,7 @@ summary:focus-visible {
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 2px solid var(--forest);
+  outline: 2px solid var(--brand-blue);
   outline-offset: 2px;
 }
 .container {
@@ -137,7 +137,7 @@ select:focus-visible {
 .lead {
   font-size: clamp(18px, 1.55vw, 23px);
   line-height: 1.65;
-  color: var(--forest);
+  color: var(--brand-blue);
 }
 .sr-only {
   position: absolute;
@@ -157,7 +157,7 @@ select:focus-visible {
   padding: 12px 20px;
   background: var(--ivory);
   z-index: 1000;
-  color: var(--forest);
+  color: var(--brand-blue);
 }
 .skip-link:focus {
   top: 15px;
@@ -179,7 +179,7 @@ select:focus-visible {
   font-size: 12px;
   font-weight: 600;
   padding: 10px 0;
-  border-bottom: 1px solid #8f9f91;
+  border-bottom: 1px solid #8fa3c0;
   line-height: 1.6;
   transition:
     gap 0.25s,
@@ -191,7 +191,7 @@ select:focus-visible {
 }
 .arrow-link.light {
   color: var(--ivory);
-  border-color: #839686;
+  border-color: #839ab8;
 }
 .arrow-link svg {
   transition: transform 0.3s;
@@ -205,8 +205,8 @@ select:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  background: var(--forest);
-  border: 1px solid var(--forest);
+  background: var(--brand-blue);
+  border: 1px solid var(--brand-blue);
   padding: 16px 24px;
   color: var(--ivory);
   font-size: 12px;
@@ -219,12 +219,12 @@ select:focus-visible {
   min-height: 52px;
 }
 .button:hover {
-  background: #27533c;
+  background: #24548d;
   transform: translateY(-2px);
 }
 .button.outline {
   background: transparent;
-  color: var(--forest);
+  color: var(--brand-blue);
 }
 .inline-actions {
   display: flex;
@@ -274,10 +274,10 @@ select:focus-visible {
   transform: translateY(-110%);
 }
 .site-header.solid {
-  color: var(--forest);
-  background: #f7f6f0f2;
+  color: var(--brand-blue);
+  background: #f5f7fbf2;
   backdrop-filter: blur(18px);
-  border-bottom: 1px solid #133b2c14;
+  border-bottom: 1px solid #123f7a14;
 }
 .nav-wrap {
   height: 102px;
@@ -355,7 +355,7 @@ select:focus-visible {
   min-width: 250px;
   padding: 15px 20px;
   background: var(--ivory);
-  color: var(--forest);
+  color: var(--brand-blue);
   box-shadow: 0 10px 25px #00000012;
   visibility: hidden;
   opacity: 0;
@@ -389,10 +389,10 @@ select:focus-visible {
   white-space: nowrap;
 }
 .solid .nav-contact {
-  border-color: #133b2c50;
+  border-color: #123f7a50;
 }
 .nav-contact:hover {
-  background: var(--forest);
+  background: var(--brand-blue);
   color: white;
 }
 .menu-toggle {
@@ -408,12 +408,12 @@ select:focus-visible {
   position: relative;
   color: white;
   overflow: hidden;
-  background: var(--evergreen);
+  background: var(--navy);
 }
 .home-hero > .photo {
   position: absolute;
   inset: 0;
-  background: var(--forest);
+  background: var(--brand-blue);
 }
 .home-hero > .photo img {
   object-position: 50% 60%;
@@ -424,8 +424,8 @@ select:focus-visible {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, #0a261cd9 0%, #09251978 45%, #0b251a16 100%),
-    linear-gradient(0deg, #0b241cd1, transparent 55%, #0b241c50);
+    linear-gradient(90deg, #0a2346d9 0%, #0a234678 45%, #102b5016 100%),
+    linear-gradient(0deg, #091c38d1, transparent 55%, #091c3850);
 }
 .hero-topline {
   position: absolute;
@@ -486,11 +486,11 @@ select:focus-visible {
 .hero-actions .button {
   background: var(--ivory);
   border-color: var(--ivory);
-  color: var(--forest);
+  color: var(--brand-blue);
   min-width: 190px;
 }
 .hero-actions .button:hover {
-  background: #d9e2cb;
+  background: #d9e2f0;
 }
 .hero-partner {
   display: flex;
@@ -504,7 +504,7 @@ select:focus-visible {
 }
 .hero-partner:hover .circle-arrow {
   background: var(--ivory);
-  color: var(--forest);
+  color: var(--brand-blue);
 }
 .hero-foot {
   position: absolute;
@@ -578,7 +578,7 @@ select:focus-visible {
 /* The crop atlas is an active field study, rather than a carousel of ads. */
 .atlas-section {
   padding: 100px 0 110px;
-  background: #eeeee5;
+  background: #edf1f7;
 }
 .section-heading {
   display: flex;
@@ -616,7 +616,7 @@ select:focus-visible {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, #0d251d88, transparent 40%);
+  background: linear-gradient(0deg, #091c3888, transparent 40%);
   pointer-events: none;
 }
 .atlas-image-label {
@@ -659,13 +659,13 @@ select:focus-visible {
   border-bottom: 1px solid var(--line);
   font-family: var(--font-serif);
   font-size: 27px;
-  color: #6c796c;
+  color: #687993;
   transition:
     color 0.25s,
     padding 0.25s;
 }
 .atlas-info [role="tab"][aria-selected="true"] {
-  color: var(--forest);
+  color: var(--brand-blue);
   padding-left: 8px;
 }
 .atlas-tab-num {
@@ -721,13 +721,13 @@ select:focus-visible {
   place-items: center;
 }
 .atlas-controls button:hover {
-  background: var(--forest);
+  background: var(--brand-blue);
   color: white;
 }
 .production-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: var(--forest);
+  background: var(--brand-blue);
   color: var(--ivory);
 }
 .production-visual {
@@ -742,7 +742,7 @@ select:focus-visible {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, #0d251daa, transparent 60%);
+  background: linear-gradient(0deg, #091c38aa, transparent 60%);
 }
 .photo-note {
   position: absolute;
@@ -772,7 +772,7 @@ select:focus-visible {
 }
 .production-copy > p {
   font-size: 13px;
-  color: #cfdbd0;
+  color: #cfdaeb;
   line-height: 1.9;
 }
 .process-lines {
@@ -837,7 +837,7 @@ select:focus-visible {
   color: var(--muted);
 }
 .global-section {
-  background: var(--evergreen);
+  background: var(--navy);
   color: var(--ivory);
   padding: 95px 0 40px;
 }
@@ -855,7 +855,7 @@ select:focus-visible {
 }
 .global-heading p {
   font-size: 13px;
-  color: #c2d0c3;
+  color: #c2d1e6;
 }
 .presence-map {
   position: relative;
@@ -907,7 +907,7 @@ select:focus-visible {
 }
 .map-pin b {
   font-weight: 500;
-  background: #0d251ddb;
+  background: #091c38db;
   padding: 2px 7px;
 }
 .map-location {
@@ -915,7 +915,7 @@ select:focus-visible {
   width: 260px;
   right: 0;
   bottom: 80px;
-  background: #102c22e8;
+  background: #102d52e8;
   padding: 25px;
   border-left: 1px solid #cbb67566;
 }
@@ -930,7 +930,7 @@ select:focus-visible {
 }
 .map-location p {
   font-size: 11px;
-  color: #bdcdbf;
+  color: #bdcde4;
 }
 .map-location .arrow-link {
   color: var(--ivory);
@@ -985,7 +985,7 @@ select:focus-visible {
   content: "";
   position: absolute;
   inset: 0;
-  background: #10271b80;
+  background: #102b5080;
 }
 .field-feature-content {
   position: relative;
@@ -1049,7 +1049,7 @@ select:focus-visible {
 }
 .home-resources {
   padding: 90px 0;
-  background: #eeeee5;
+  background: #edf1f7;
 }
 .editorial-grid {
   display: grid;
@@ -1157,8 +1157,8 @@ select:focus-visible {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, #0c281ee6, #0c281e45),
-    linear-gradient(0deg, #0c281e88, transparent);
+    linear-gradient(90deg, #102a50e6, #102a5045),
+    linear-gradient(0deg, #102a5088, transparent);
 }
 .page-hero-content {
   position: relative;
@@ -1175,7 +1175,7 @@ select:focus-visible {
 .page-hero p {
   max-width: 530px;
   font-size: 13px;
-  color: #e0e6de;
+  color: #e0e6f0;
   line-height: 1.8;
 }
 .interior-intro {
@@ -1196,7 +1196,7 @@ select:focus-visible {
 }
 .purpose-band {
   padding: 95px 0;
-  background: var(--forest);
+  background: var(--brand-blue);
   color: var(--ivory);
 }
 .purpose-band h2 {
@@ -1211,7 +1211,7 @@ select:focus-visible {
   max-width: 470px;
   margin-left: auto;
   font-size: 13px;
-  color: #d5ded2;
+  color: #d5deec;
 }
 .about-pair {
   display: grid;
@@ -1265,7 +1265,7 @@ select:focus-visible {
   position: absolute;
   width: 9px;
   height: 9px;
-  background: var(--forest);
+  background: var(--brand-blue);
   border-radius: 50%;
   left: -43px;
   top: 13px;
@@ -1410,7 +1410,7 @@ select:focus-visible {
   content: "";
   position: absolute;
   inset: 0;
-  background: #10271b70;
+  background: #102b5070;
 }
 .research-panoramic > div:not(.photo) {
   z-index: 1;
@@ -1420,7 +1420,7 @@ select:focus-visible {
   margin: 0;
 }
 .global-page {
-  background: var(--evergreen);
+  background: var(--navy);
   color: var(--ivory);
   padding: 80px 0 35px;
 }
@@ -1493,12 +1493,12 @@ select:focus-visible {
     color 0.2s;
 }
 .filter-pills button[aria-pressed="true"] {
-  background: var(--forest);
+  background: var(--brand-blue);
   color: var(--ivory);
-  border-color: var(--forest);
+  border-color: var(--brand-blue);
 }
 .filter-pills button:hover {
-  border-color: var(--forest);
+  border-color: var(--brand-blue);
 }
 .searchbox {
   display: flex;
@@ -1506,7 +1506,7 @@ select:focus-visible {
   gap: 10px;
   max-width: 320px;
   width: 100%;
-  border-bottom: 1px solid #8f9f91;
+  border-bottom: 1px solid #8fa3c0;
   padding: 8px 0;
 }
 .searchbox input {
@@ -1515,7 +1515,7 @@ select:focus-visible {
   width: 100%;
   font-size: 12px;
   min-height: 32px;
-  color: var(--forest);
+  color: var(--brand-blue);
   min-width: 0;
 }
 .searchbox svg {
@@ -1548,7 +1548,7 @@ select:focus-visible {
   right: 20px;
   bottom: 20px;
   background: var(--ivory);
-  color: var(--forest);
+  color: var(--brand-blue);
   border-color: var(--ivory);
   opacity: 0;
   transform: translateY(10px);
@@ -1593,7 +1593,7 @@ select:focus-visible {
   align-items: center;
   gap: 13px;
   padding: 6px 10px;
-  background: #e6eadf;
+  background: #e6ebf4;
 }
 .catalogue-footnote {
   display: flex;
@@ -1636,7 +1636,7 @@ select:focus-visible {
   gap: 12px;
 }
 .breadcrumb a:hover {
-  color: var(--forest);
+  color: var(--brand-blue);
   text-decoration: underline;
 }
 .crop-detail {
@@ -1690,7 +1690,7 @@ select:focus-visible {
 }
 .product-questions {
   padding: 50px;
-  background: #eaeedf;
+  background: #eaeff7;
   margin-bottom: 65px;
 }
 .product-questions h2 {
@@ -1711,7 +1711,7 @@ select:focus-visible {
 }
 .variety-hero {
   padding: 100px 0 75px;
-  background: #e9ede1;
+  background: #e9eef6;
 }
 .variety-hero .breadcrumb {
   padding-bottom: 40px;
@@ -1807,7 +1807,7 @@ select:focus-visible {
   margin: 0 0 10px;
 }
 .enquiry-panel {
-  background: #eeeee5;
+  background: #edf1f7;
   padding: 40px;
 }
 .enquiry-panel h2 {
@@ -1823,7 +1823,7 @@ select:focus-visible {
   gap: 12px;
   padding: 17px;
   background: #e0e6d7;
-  border-left: 2px solid #869b70;
+  border-left: 2px solid #809abb;
   margin: 25px 0;
 }
 .delivery-notice svg {
@@ -1857,10 +1857,10 @@ form select,
 form textarea {
   display: block;
   width: 100%;
-  border: 1px solid #cdd4c8;
-  background: #f9f9f2;
+  border: 1px solid #cbd5e5;
+  background: #f9fbff;
   border-radius: 0;
-  color: var(--forest);
+  color: var(--brand-blue);
   padding: 12px;
   margin-top: 7px;
   font-size: 13px;
@@ -1884,7 +1884,7 @@ form .consent input {
   height: 16px;
   flex-shrink: 0;
   margin-top: 3px;
-  accent-color: var(--forest);
+  accent-color: var(--brand-blue);
 }
 .consent a {
   text-decoration: underline;
@@ -2080,7 +2080,7 @@ summary > span {
 .article-note {
   font-size: 11px;
   padding: 20px;
-  background: #e7ebdf;
+  background: #e7edf5;
   margin-bottom: 45px;
 }
 .related-articles {
@@ -2170,7 +2170,7 @@ summary > span {
 /* A restrained sign-off. */
 footer {
   position: relative;
-  background: var(--evergreen);
+  background: var(--navy);
   color: var(--ivory);
   overflow: hidden;
   padding-top: 75px;
@@ -2199,7 +2199,7 @@ footer {
   font-size: 7px;
   letter-spacing: 0.1em;
   gap: 10px;
-  color: #b2c2b2;
+  color: #b4c6de;
 }
 .agri-brand img {
   background: white;
@@ -2218,7 +2218,7 @@ footer {
   gap: 10px;
   font-size: 10px;
   margin-bottom: 12px;
-  color: #c2d0c1;
+  color: #c5d3e5;
 }
 .footer-main > div:not(.footer-brand) > a:hover {
   color: white;
@@ -2236,7 +2236,7 @@ footer {
   justify-content: space-between;
   gap: 25px;
   font-size: 8px;
-  color: #afc0af;
+  color: #afc2de;
   position: relative;
   z-index: 1;
 }
@@ -2401,7 +2401,7 @@ footer {
   .mobile-nav {
     display: block;
     background: var(--ivory);
-    color: var(--forest);
+    color: var(--brand-blue);
     height: calc(100svh - 86px);
     overflow-y: auto;
     padding: 15px var(--gutter) 40px;
@@ -2610,8 +2610,8 @@ footer {
   }
   .hero-shade {
     background:
-      linear-gradient(90deg, #09271bd9, #09271b50),
-      linear-gradient(0deg, #0c251dc9, transparent 70%);
+      linear-gradient(90deg, #102b50d9, #102b5050),
+      linear-gradient(0deg, #102a50c9, transparent 70%);
   }
   .introduction {
     padding-block: 70px 0;
@@ -3611,7 +3611,7 @@ footer {
   }
 }
 .site-header:has(+ main .not-found) {
-  color: var(--forest);
+  color: var(--brand-blue);
   background: var(--ivory);
 }
 .atlas > * {
@@ -3696,8 +3696,8 @@ footer {
   bottom: 12px;
   z-index: 2;
   padding: 4px 7px;
-  background: #0d251db8;
-  color: #f7f6f0;
+  background: #091c38b8;
+  color: #f5f7fb;
   font-size: 6px;
   line-height: 1.5;
   letter-spacing: 0.1em;
@@ -3787,7 +3787,7 @@ footer {
   position: relative;
   min-height: 500px;
   overflow: hidden;
-  background: var(--forest);
+  background: var(--brand-blue);
 }
 .audience-visual > .photo {
   position: absolute;
@@ -3797,7 +3797,7 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, #0d251def, #0d251d04 80%);
+  background: linear-gradient(0deg, #091c38ef, #091c3804 80%);
   pointer-events: none;
 }
 .audience-visual-copy {
@@ -3880,7 +3880,7 @@ footer {
     scroll-snap-type: x proximity;
     padding-bottom: 18px;
     scrollbar-width: thin;
-    scrollbar-color: #a4b5a1 transparent;
+    scrollbar-color: #9fb6d4 transparent;
     overscroll-behavior-inline: contain;
   }
   .seed-story-frame {
@@ -3993,4 +3993,14 @@ footer {
   .wordmark-zadzamatura small { font-size: 6px; letter-spacing: .08em; }
   .wordmark-zadzamatura svg { width: 22px; }
   .hero-kicker { font-size: 8px; letter-spacing: .08em; }
+}
+
+/* Supplied official logo, in its original colours. */
+.wordmark-zadzamatura { display: flex; flex-direction: column; gap: 2px; align-items: center; }
+.wordmark-zadzamatura .official-brand-logo { display: block; width: 185px; height: 60px; object-fit: contain; }
+.wordmark-zadzamatura .corporate-endorsement { display: block; font-size: 6.5px; font-weight: 600; letter-spacing: .16em; line-height: 1.2; }
+.agri-brand img { width: 240px; height: auto; padding: 14px; background: #fff; border-radius: 2px; }
+@media (max-width: 430px) {
+  .wordmark-zadzamatura .official-brand-logo { width: 140px; height: 46px; }
+  .wordmark-zadzamatura .corporate-endorsement { font-size: 5.5px; letter-spacing: .1em; }
 }

@@ -9,8 +9,8 @@ export default function Image() {
         style={{
           width: "100%",
           height: "100%",
-          background: "#133b2c",
-          color: "#f7f6f0",
+          background: "#123f7a",
+          color: "#f5f7fb",
           display: "flex",
           flexDirection: "column",
           padding: 80,
